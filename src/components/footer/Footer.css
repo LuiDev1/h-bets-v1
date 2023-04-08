@@ -1,0 +1,30 @@
+footer{
+    background-color: whitesmoke;
+    min-height: 200px;
+}
+
+.linkedin-footer{
+    background-color: #0B63BD;
+    border-radius: 7px;
+    max-width: 130px;
+    margin-top: 20px;
+}
+
+.twitter-footer{
+    background-color: #03A9F4;
+    border-radius: 7px;
+    max-width: 130px;
+    margin-top: 20px;
+}
+
+.instagram-footer{
+    background-color: #D63F8E;
+    border-radius: 7px;
+    max-width: 130px;
+    margin-top: 20px;
+}
+
+.ul-Footer{
+    padding-top: 30px;
+    margin-left: 70px;
+}

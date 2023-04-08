@@ -1,0 +1,147 @@
+header{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+ul{
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.App-header {
+    background-color: #282c34;
+    color: white;
+  }
+
+
+  
+/* // DESIGN DO BOTÃO SANDUICHE */
+.icon {
+    display: none;
+    cursor: pointer;
+    padding-left: 20px !important;
+}
+
+.toggle {
+    display: none;
+  }
+  
+
+  .hamburguer {
+    display: block;
+    width: 1.5em;
+    height: 5px;
+    background: #ccc;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    z-index: 3;
+  }
+  
+  .hamburguer:before,
+  .hamburguer:after {
+    content: "";
+    display: block;
+    width: 1.5em;
+    height: calc(1.5em/5);
+    background: #ccc;
+    position: absolute;
+    top: calc(1.5em/ 5 * -2);
+    transition: inherit;
+    padding: 2.5px;
+  }
+  
+  .hamburguer:after {
+    top: 10px;
+  }
+  
+  .toggle:checked + .icon>.hamburguer {
+      background: crimson;
+      transform: rotate(45deg);
+    }
+    
+    .toggle:checked + .icon>.hamburguer:before {
+        background: crimson;
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    .toggle:checked + .icon>.hamburguer:after {
+        background: crimson;
+        top: 0;
+        transform: rotate(90deg);
+    }
+    /* // */
+  
+  .menu {
+    display: none;
+    background-color: #151728;
+    padding: 50px;
+    position: absolute;
+    width: 240px;
+    z-index: 2;
+    top: 0;
+}
+
+
+/* HOVER NOS ICONES */
+
+.ul-headerItems li a, .menu li a{
+    transition: 0.27s;
+}
+
+.ul-headerItems li a:hover, .menu li a:hover{
+    color: greenyellow;
+    filter: invert(10%);
+}
+/* // */
+  
+  
+  
+
+
+@media (max-width: 768px) {
+    .ul-headerItems{
+        display:none !important;
+    }
+    
+    .header-container{
+        display: block !important;
+        text-align: center;
+    }
+    
+    .App-header{
+        height: 130px;
+    }
+    
+
+    /* SANDUICHE */
+    .icon {
+      display: inline-block;
+    }
+    
+    .hamburguer{
+        margin-top:50px;
+    }
+
+
+    
+    .toggle:checked ~ .menu {
+      display: block;
+    }
+    /* // */
+
+    
+    
+}
+
