@@ -16,7 +16,7 @@
 /* TITULO GERAL DO CONTAINER PLANOS */
 /* ****************************** */
 .title-plansContainer {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 /* ****************************** */
@@ -201,5 +201,9 @@
 @media screen and (max-width: 625px){
   .pricing-plan{
     min-width: 80% !important;
+  }
+
+  .title-plansContainer {
+    margin-top: 50px;
   }
 }

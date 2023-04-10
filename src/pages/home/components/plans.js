@@ -10,7 +10,7 @@ import no from './images/no.png'
 
 const Planos = () => {
     return (
-        <section className='planos mt-5' id="#planos">
+        <section className='planos'>
 
             {/* TITULO DO CONTAINER */}
             <div className='title-plansContainer'>
