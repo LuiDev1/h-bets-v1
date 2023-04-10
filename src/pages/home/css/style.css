@@ -1,3 +1,11 @@
 @import url(parallax.css);
-
 @import url(plans.css);
+
+
+/* FUNDO DA PAGINA */
+/* ****************************** */
+body {
+    background-color: #151728;
+}
+
+/* ****************************** */

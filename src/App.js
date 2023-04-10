@@ -1,5 +1,6 @@
 import Routes from './Routes'
 
+// BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

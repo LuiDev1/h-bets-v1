@@ -1,0 +1,13 @@
+/* CONFIGURAÇÕES DO FORMULARIO DE ADIÇÃO DE APOSTA */
+.input_valorApostado, 
+.input_Sportsbook, 
+.input_dateBet{
+    width: 180px !important;
+    height: 45px !important;
+}
+
+.input_descriptionBet{
+    height: 60px !important;
+    width: 230px !important;
+}
+
