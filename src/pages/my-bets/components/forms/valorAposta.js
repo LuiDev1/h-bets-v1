@@ -39,12 +39,12 @@ const ValorAposta = () => {
 
         <div>
 
-            <label for='value-ph' className='text-white mb-2'>Valor da aposta</label>
-            <div class="input-group mb-3">
-                <span class="input-group-text">R$</span>
-                <div class="form-floating">
-                    <input type="text" class="form-control input_valorApostado" id="value-ph" placeholder="Valor" value={valor} onChange={handleInputChange}/>
-                        <label for="value-ph">Valor</label>
+            <label htmlFor='value-ph' className='text-white mb-2'>Valor da aposta</label>
+            <div className="input-group mb-3">
+                <span className="input-group-text">R$</span>
+                <div className="form-floating">
+                    <input type="text" className="form-control input_valorApostado" id="value-ph" placeholder="Valor" value={valor} onChange={handleInputChange}/>
+                        <label htmlFor="value-ph">Valor</label>
                 </div>
             </div>
         </div>

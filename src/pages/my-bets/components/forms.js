@@ -8,6 +8,7 @@ import Sportsbook from './forms/sportsbook';
 import DescriptionBet from './forms/description'
 import Date from './forms/date'
 import Situation from './forms/situation'
+import Odd from './forms/odd'
 
 const ValorAposta = () => {
 
@@ -22,13 +23,14 @@ const ValorAposta = () => {
                 <Sportsbook />
             </div>
 
-            <div className='group-addBet d-flex gap-4 flex-wrap'>
+            <div className='group-addBet d-flex gap-4'>
                 <DescriptionBet />
                 <Date />
             </div>
 
-            <div className='group-addBet'>
+            <div className='group-addBet d-flex gap-4'>
                 <Situation />
+                <Odd />
             </div>
         </div>
     );

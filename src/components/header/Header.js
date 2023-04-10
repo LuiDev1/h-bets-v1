@@ -29,7 +29,7 @@ function Header() {
             {/* BOTÃO SANDUICHE */}
             <div>
                 <input type="checkbox" id="toggle" className="toggle" />
-                <label for="toggle" className="icon">
+                <label htmlFor="toggle" className="icon">
                     <div className="hamburguer"></div>
                 </label>
                 <ul className="menu">

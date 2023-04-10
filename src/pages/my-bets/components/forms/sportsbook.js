@@ -8,9 +8,9 @@ const Sportsbook = () => {
 
     return (
         <div>
-            <label for='sportsbook' className='text-white mb-2'>Casa de aposta</label>
-            <select className="form-select input_Sportsbook" id='sportsbook'>
-                <option selected>Casa de aposta</option>
+            <label htmlFor='sportsbook' className='text-white mb-2'>Casa de aposta</label>
+            <select className="form-select input_Sportsbook" id='sportsbook' defaultValue="sportsbook-select">
+                <option value='0' >Casa de aposta</option>
                 <option value="1">Bet365</option>
                 <option value="2">Sportingbet</option>
                 <option value="3">Betfair</option>

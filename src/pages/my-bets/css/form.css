@@ -1,8 +1,17 @@
 /* CONFIGURAÇÕES DO FORMULARIO DE ADIÇÃO DE APOSTA */
+
+/* TAMANHO DOS INPUTS */
+/**************************/
 .input_valorApostado,
+.input_situationBet,
 .input_Sportsbook,
-.input_dateBet {
+.input_dateBet{
     width: 180px !important;
+    height: 45px !important;
+}
+
+.input_Odd{
+    width: 150px;
     height: 45px !important;
 }
 
@@ -11,8 +20,13 @@
     width: 230px !important;
 }
 
+/**************************/
+
 
 @media screen and (max-width: 540px) {
+
+    /* TAMANHO DOS INPUTS */
+    /**************************/
     .input_Sportsbook,
     .input_dateBet,
     .input_situationBet,
@@ -20,26 +34,44 @@
         width: 255px !important;
     }
 
-    .input_valorApostado{
+    .input_valorApostado {
         width: 215px !important;
     }
 
-    .container-minhasApostas{
-       width: 100%;
+    .input_Odd{
+        width: 200px;
     }
 
-    .container-forms{
+    /**************************/
+
+
+    /* CONTAINER DO FORMULARIO */
+    /**************************/
+    .container-forms {
         display: flex;
         justify-content: center;
         align-items: center !important;
         padding-top: 250px !important;
     }
 
-    .group-addBet{
+    /**************************/
+
+    /* QUEBRANDO LINHAS DOS INPUTS */
+    /**************************/
+
+    .group-addBet {
         flex-direction: column;
     }
 
-    .container-forms h3{
+    /**************************/
+
+
+    /* TITULO */
+    /**************************/
+    .container-forms h3 {
         margin-bottom: 30px;
     }
+
+    /**************************/
+
 }
