@@ -10,7 +10,7 @@ import no from './images/no.png'
 
 const Planos = () => {
     return (
-        <section className='mt-5' id="#planos">
+        <section className='planos mt-5' id="#planos">
 
             {/* TITULO DO CONTAINER */}
             <div className='title-plansContainer'>
@@ -21,7 +21,7 @@ const Planos = () => {
 
 
                 {/* <!-- CONTAINER COM TODOS OS PLANOS --> */}
-                <div className="d-flex flex-wrap">
+                <div className="d-flex flex-wrap justify-content-center">
 
                     {/* PLANO - INICIANTE */}
                     <div className="pricing-plan">
