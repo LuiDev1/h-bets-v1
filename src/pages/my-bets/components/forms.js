@@ -17,16 +17,19 @@ const ValorAposta = () => {
                 <h3 className='text-white fs-4'>Adicionar Aposta</h3>
             </div>
 
-        <div className='d-flex gap-4'>
-            <ValorBet />
-            <Sportsbook />
-        </div>
+            <div className='group-addBet d-flex gap-4'>
+                <ValorBet />
+                <Sportsbook />
+            </div>
 
-        <div className='d-flex gap-4'>
-            <DescriptionBet />
-            <Date />
-        </div>
-            <Situation />
+            <div className='group-addBet d-flex gap-4 flex-wrap'>
+                <DescriptionBet />
+                <Date />
+            </div>
+
+            <div className='group-addBet'>
+                <Situation />
+            </div>
         </div>
     );
 };

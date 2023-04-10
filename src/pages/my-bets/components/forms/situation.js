@@ -10,7 +10,7 @@ const Situation = () => {
         <div>
             <label for='situationBet' className='text-white mb-2'>Situação</label>
             
-            <select class="form-select" id='situationBet'>
+            <select class="form-select input_situationBet" id='situationBet'>
                 <option selected>Situação</option>
                 <option value="1">Ganho</option>
                 <option value="2">Pendente</option>

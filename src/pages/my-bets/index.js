@@ -15,7 +15,7 @@ import FormAposta from './components/forms';
 const MinhasApostas = () => {
   return (
     <section className='table-excel d-flex justify-content-center'>
-      <div>
+      <div className='container-minhasApostas'>
         <FormAposta />
       </div>
 

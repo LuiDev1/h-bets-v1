@@ -1,13 +1,45 @@
 /* CONFIGURAÇÕES DO FORMULARIO DE ADIÇÃO DE APOSTA */
-.input_valorApostado, 
-.input_Sportsbook, 
-.input_dateBet{
+.input_valorApostado,
+.input_Sportsbook,
+.input_dateBet {
     width: 180px !important;
     height: 45px !important;
 }
 
-.input_descriptionBet{
+.input_descriptionBet {
     height: 60px !important;
     width: 230px !important;
 }
 
+
+@media screen and (max-width: 540px) {
+    .input_Sportsbook,
+    .input_dateBet,
+    .input_situationBet,
+    .input_descriptionBet {
+        width: 255px !important;
+    }
+
+    .input_valorApostado{
+        width: 215px !important;
+    }
+
+    .container-minhasApostas{
+       width: 100%;
+    }
+
+    .container-forms{
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+        padding-top: 250px !important;
+    }
+
+    .group-addBet{
+        flex-direction: column;
+    }
+
+    .container-forms h3{
+        margin-bottom: 30px;
+    }
+}
