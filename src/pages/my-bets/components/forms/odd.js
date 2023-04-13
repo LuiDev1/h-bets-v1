@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-function Odd() {
+function Odd(props) {
     const [odd, setOdd] = useState("");
 
+    useEffect(() => {
+        setOdd(props.value);
+      }, [props.value]);
+
     function handleOddChange(e) {
+
+        setOdd(e.target.value);
+        props.onChange(e.target.value);
+        
         const value = e.target.value.replace(/[^\d.]/g, ""); // remove tudo que não for número ou ponto
         const parts = value.split("."); // separa a string pelos pontos
         let formattedValue = "";

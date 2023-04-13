@@ -1,14 +1,9 @@
 @import url(form.css);
+@import url(table.css);
 
-.table-excel{
-    padding-top: 100px;
-}
-
-.hot-table{
-    height: auto;
-}
 
 .container-forms{
     width: 100%;
-    padding: 30px;
+    padding-top: 150px !important;
 }
+

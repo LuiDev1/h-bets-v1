@@ -1,27 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../css/style.css';
 
 
-const Sportsbook = () => {
+function Sportsbook(props){
+    const [bookInput, setBook] = useState('');
+
+    function handleBook(event){
+        setBook(event.target.value);
+        props.onChange(event.target.value);
+    }
+
+    useEffect(() => {
+        setBook(props.value);
+      }, [props.value]);
 
     return (
         <div>
             <label htmlFor='sportsbook' className='text-white mb-2'>Casa de aposta</label>
-            <select className="form-select input_Sportsbook" id='sportsbook' defaultValue="sportsbook-select">
+            <select className="form-select input_Sportsbook" id='sportsbook' defaultValue="sportsbook-select" value={bookInput} onChange={handleBook}>
                 <option value='0' >Casa de aposta</option>
-                <option value="1">Bet365</option>
-                <option value="2">Sportingbet</option>
-                <option value="3">Betfair</option>
-                <option value="4">Betano</option>
-                <option value="5">1xBet</option>
-                <option value="6">Betway</option>
-                <option value="7">Rivalo</option>
-                <option value="8">Betboo</option>
-                <option value="9">188Bet</option>
-                <option value="10">NetBet</option>
-                <option value="11">Outro</option>
+                <option value="Bet365">Bet365</option>
+                <option value="Sportingbet">Sportingbet</option>
+                <option value="BetFair">Betfair</option>
+                <option value="Betano">Betano</option>
+                <option value="1xBet">1xBet</option>
+                <option value="Betway">Betway</option>
+                <option value="Rivalo">Rivalo</option>
+                <option value="Betboo">Betboo</option>
+                <option value="188Bet">188Bet</option>
+                <option value="NetBet">NetBet</option>
+                <option value="Outro">Outro</option>
             </select>
         </div>
     );

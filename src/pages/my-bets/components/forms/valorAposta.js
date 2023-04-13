@@ -1,37 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../../css/style.css';
 
 
-const ValorAposta = () => {
-
-
-    // FORMATAÇÃO DA MOEDA INPUT VALOR DA APOSTA
+function ValorAposta(props){
     const [valor, setValor] = useState('');
 
+    useEffect(() => {
+        setValor(props.value);
+      }, [props.value]);
 
-    const formatarMoeda = (valor) => {
-        return valor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
-    }
 
     const handleInputChange = (event) => {
-        let value = event.target.value;
 
-        // remove todos os caracteres que não são dígitos
-        value = value.replace(/\D/g, '');
-
-        // divide o valor em centavos e reais
-        let cents = value.slice(-2);
-        let reais = value.slice(0, -2);
-
-        // adiciona vírgula como separador de milhares
-        reais = reais.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
-
-        // concatena os valores
-        let novoValor = reais + ',' + cents;
-
-        setValor(formatarMoeda(novoValor));
+        // CONVERSÃO PARA REAL
+        const valor = (Number(event.target.value.replace(/\D/g, '')) / 100).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+        setValor(valor);
+        props.onChange(valor);
     }
     // //
 
