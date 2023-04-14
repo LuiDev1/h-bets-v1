@@ -132,7 +132,7 @@ function Header() {
                             <div className='container-loginInputs d-flex flex-column align-items-center justify-content-center'>
                                 <div>
 
-                                    <h2 className='fs-3 text-white'>Faça seu login</h2>
+                                    <h2 className='fs-3 text-white text-center'>Faça seu login</h2>
                                     {/* INPUT EMAIL */}
                                     <div>
                                         <label htmlFor='value-email' className='email-input mb-2 text-white'>Email</label>
