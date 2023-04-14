@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
 
 // COMPONENTES
-import Planilha from './components/planilha';
 import FormAposta from './components/forms';
 
 
@@ -18,10 +17,6 @@ const MinhasApostas = () => {
       <div className='container-minhasApostas'>
         <FormAposta />
       </div>
-
-      {/* <div>
-        <Planilha />
-      </div> */}
     </section>
   );
 };

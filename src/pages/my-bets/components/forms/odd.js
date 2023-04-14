@@ -1,12 +1,25 @@
+// IMPORTAÇÕES
 import React, { useState, useEffect } from "react";
 
+// BOOTSTRAP
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// CSS
+import '../../css/style.css';
+
+
+// INICIO DA FUNÇÃO PRINCIPAL
 function Odd(props) {
+
+    // CRIANDO UM USESTATE PARA USAR O INPUT NO COMPONENTE PAI
     const [odd, setOdd] = useState("");
 
+    // USEEFFECT CRIADO PARA ATUALIZAR OS INPUTS PARA VAZIO
     useEffect(() => {
         setOdd(props.value);
       }, [props.value]);
 
+      // FORMATANDO O INPUT PARA FORMATO ODD E SALVANDO EM UMA PROPS
     function handleOddChange(e) {
 
         setOdd(e.target.value);
@@ -30,6 +43,7 @@ function Odd(props) {
         setOdd(formattedValue);
     }
 
+    //RETORNANDO O INPUT PARA O COMPONENTE PAI
     return (
         <form>
             <label htmlFor='value-odd' className="text-white mb-2">Odd</label>

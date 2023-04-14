@@ -1,4 +1,13 @@
 /* CONFIGURAÇÕES DO FORMULARIO DE ADIÇÃO DE APOSTA */
+/* CONTAINER PRINCIPAL DO FORMULÁRIO */
+/**************************/
+.container-forms {
+    width: 100%;
+    padding-top: 150px !important;
+}
+
+/**************************/
+
 
 /* TAMANHO DOS INPUTS */
 /**************************/

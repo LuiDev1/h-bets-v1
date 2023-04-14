@@ -1,9 +1,10 @@
+/* CSS DO FORMULÁRIO */
+/**************************/
 @import url(form.css);
+/**************************/
+
+/* CSS DA TABELA */
+/**************************/
 @import url(table.css);
-
-
-.container-forms{
-    width: 100%;
-    padding-top: 150px !important;
-}
+/**************************/
 

@@ -6,6 +6,11 @@ header {
   width: 100%;
 }
 
+.button-profile {
+  cursor: pointer;
+}
+
+
 .App-header {
   background-color: #282c34;
   color: white;
@@ -108,15 +113,42 @@ a {
 /* HOVER NOS ICONES */
 /* ****************************** */
 .ul-headerItems li a,
-.menu li a {
+.menu li a,
+.button-profile {
   transition: 0.27s;
 }
 
 .ul-headerItems li a:hover,
-.menu li a:hover {
+.menu li a:hover,
+.button-profile:hover {
   color: greenyellow;
   filter: invert(10%);
 }
+
+/* ****************************** */
+
+/* BOTÃO DE REGISTRO DO MODAL */
+/* ****************************** */
+.registro-modal {
+  display: inline-block;
+  background-color: purple;
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.registro-modal:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+  color: white;
+  background-color: #8B008B;
+}
+
+
 
 /* ****************************** */
 
@@ -156,4 +188,70 @@ a {
     display: block;
   }
 }
-  /* ****************************** */
+
+/* ****************************** */
+
+/* INPUTS LOGIN */
+/* ****************************** */
+#value-email, #value-pass{
+  max-height: 45px;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.container-login{
+  margin: 0 auto;
+}
+
+.container-loginInputs{
+  width: 50%;
+  padding-top: 70px;
+}
+
+.email-input{
+  padding-top: 40px;
+}
+/* ****************************** */
+
+.container-login {
+  height: 100%;
+  width: 100%;
+  background-color: #343a40;
+}
+
+.div-addLogin{
+  width: 50%;
+}
+
+.logo-modal{
+  max-width: 400px;
+}
+
+.modal-login{
+  margin-top: 120px;
+}
+
+.modal-header{
+  background-color: #343a40 !important;
+}
+@media screen and (max-width: 1200px){
+  .container-loginInputs{
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .div-addLogin{
+    width: 100%;
+  }
+
+  .modal-login{
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width:420px){
+  .logo-modal{
+    max-width: 250px;
+  }
+}

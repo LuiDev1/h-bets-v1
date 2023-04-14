@@ -1,21 +1,30 @@
+// IMPORTAÇÕES
 import React, { useState, useEffect } from 'react';
+
+// BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// CSS
 import '../../css/style.css';
 
-
+// INCIO DA FUNÇÃO PRINCIPAL
 function Sportsbook(props){
+
+    // CRIANDO UM USESTATE PARA USAR O INPUT NO COMPONENTE PAI 
     const [bookInput, setBook] = useState('');
 
+    // CRIANDO O PROPS PARA ENVIAR O INPUT AO COMPONENTE PAI
     function handleBook(event){
         setBook(event.target.value);
         props.onChange(event.target.value);
     }
 
+    // USEEFFECT CRIADO PARA ATUALIZAR OS INPUTS PARA VAZIO
     useEffect(() => {
         setBook(props.value);
-      }, [props.value]);
-
+    }, [props.value]);
+    
+    //RETORNANDO O INPUT PARA O COMPONENTE PAI
     return (
         <div>
             <label htmlFor='sportsbook' className='text-white mb-2'>Casa de aposta</label>
