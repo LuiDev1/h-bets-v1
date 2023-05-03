@@ -30,7 +30,7 @@ const Parallax = () => {
                     <ul className="mb-5">
                         <li>Analise seu lucro e/ou perda</li>
                         <li>Contabilize os gastos a quantidade de apostas feitas</li>
-                        <li>Planilhe com mais rapides e segurança</li>
+                        <li>Planilhe com mais rapidez e segurança</li>
                         <li>Analise seu lucro e/ou perda</li>
                     </ul>
                     <p className="link-site text-primary fs-3">Assine o {site.name}</p>
