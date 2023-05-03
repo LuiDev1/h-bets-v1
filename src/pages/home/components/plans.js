@@ -40,7 +40,7 @@ const Planos = () => {
                             <li className='d-flex align-items-center justify-content-center'><img src={no} alt='Sim' width='18px' className='mx-2' />Bem estar financeiro</li>
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Atendimento ao cliente</li>
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Lucro ou divida mensal</li>
-                            <li className='d-flex align-items-center justify-content-center'><img src={no} alt='Sim' width='18px' className='mx-2' />Contabilizador de apostar</li>
+                            <li className='d-flex align-items-center justify-content-center'><img src={no} alt='Sim' width='18px' className='mx-2' />Contabilizador de apostas</li>
                         </ul>
 
                         {/* BOTÃO DE SELEÇÃO DO PLANO */}
@@ -67,7 +67,7 @@ const Planos = () => {
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Bem estar financeiro</li>
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Atendimento ao cliente</li>
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Lucro ou divida mensal</li>
-                            <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Contabilizador de apostar</li>
+                            <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Contabilizador de apostas</li>
                         </ul>
 
                         {/* BOTÃO DE SELEÇÃO DO PLANO */}
@@ -93,7 +93,7 @@ const Planos = () => {
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Bem estar financeiro</li>
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Atendimento ao cliente</li>
                             <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Lucro ou divida mensal</li>
-                            <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Contabilizador de apostar</li>
+                            <li className='d-flex align-items-center justify-content-center'><img src={yes} alt='Sim' width='18px' className='mx-2' />Contabilizador de apostas</li>
                         </ul>
 
                         {/* BOTÃO DE SELEÇÃO DO PLANO */}
