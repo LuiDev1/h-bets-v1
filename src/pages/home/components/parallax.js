@@ -29,7 +29,7 @@ const Parallax = () => {
                     <h3 className="fs-1">Contabilize suas apostas</h3>
                     <ul className="mb-5">
                         <li>Analise seu lucro e/ou perda</li>
-                        <li>Contabilise os gastos a quantidade de apostas feitas</li>
+                        <li>Contabilize os gastos a quantidade de apostas feitas</li>
                         <li>Planilhe com mais rapides e segurança</li>
                         <li>Analise seu lucro e/ou perda</li>
                     </ul>
