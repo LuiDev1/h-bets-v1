@@ -92,8 +92,8 @@ body{
 .container-about{
     text-align: center;
     color: white;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 .container-about ul li, .container-about2 ul li {
@@ -104,8 +104,8 @@ body{
 .container-about2{
   text-align: center;
   color: white;
-  padding-right: 200px;
-  padding-left: 200px;
+  padding-right: 160px;
+  padding-left: 160px;
 }
 /**************************/
 
