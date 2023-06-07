@@ -93,6 +93,7 @@ body{
     text-align: center;
     color: white;
     margin-left: 250px;
+    margin-right: 200px;
 }
 
 .container-about ul li, .container-about2 ul li {
@@ -104,6 +105,7 @@ body{
   text-align: center;
   color: white;
   margin-right: 250px;
+  margin-left: 200px;
 }
 /**************************/
 
