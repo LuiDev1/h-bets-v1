@@ -93,6 +93,7 @@ body{
     text-align: center;
     color: white;
     padding-right: 250px;
+    padding-left: 100px;
 }
 
 .container-about ul li, .container-about2 ul li {
@@ -103,7 +104,7 @@ body{
 .container-about2{
   text-align: center;
   color: white;
-  padding-right: 100px;
+  padding-right: 250px;
   padding-left: 100px;
 }
 /**************************/
